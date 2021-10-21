@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(88, 88, 238);
+}
+#navbar{
+  position: relative;
+  display:flex;
+  align-items: center;
+  top: 0;
+}
+#logo{
+  margin: 10px 34px;
+}
+#logo img{
+    height: 65px;
+    margin: 3px 6px;
+    border-radius: 15px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+content: "";
+background-color: black;
+position: absolute;
+height: 100%;
+top: 0px;
+left: 0px;
+width: 100%;
+z-index: -1;
+opacity: 0.5;
+}
+#navbar ul li{
+    list-style:none;
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
+#navbar ul li a{
+    font-size: large;
+    color: rgb(167, 205, 238);
+    display: block;
+    padding: 3px 30px;
+    margin-left: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+.index img{
+    height: 825px;
+    width: 100%;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 633px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+content: "";
+background:url("img/pexels-lukas-574077\ \(1\).jpg") no-repeat center center/cover;
+position: absolute;
+margin-top: 88px;
+height: 80%;
+top: 0px;
+left: 0px;
+width: 100%;
+z-index: -1;
+opacity: 0.9;
+}
+#home h1{
+    text-transform:unset;
+    color: rgb(8, 129, 235);
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: center;
+}
+#home p{
+    text-align: center;
+    color: rgb(12, 54, 90);
+    word-spacing: 1px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+}
